@@ -1,0 +1,15 @@
+.footer {
+  background: green;
+}
+
+.footerGnav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  text-align: center;
+}

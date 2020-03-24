@@ -1,0 +1,50 @@
+/*--------------------仮--------------------*/
+.logo {
+  width: 200px;
+  height: 100px;
+  background: black;
+}
+/*--------------------仮--------------------*/
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.schedule {
+  list-style: none;
+  margin-left: auto;
+}
+
+.gnav {
+  clear: both;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+.gnavItem {
+  text-align: center;
+  width: calc(100% / 5);
+  border-left: 1px black dotted;
+  &:first-child {
+    border-left: none;
+  }
+  & a {
+    display: block;
+    padding: 1em 0;
+    &:link {
+      text-decoration: none;
+      color: black;
+    }
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+    &:hover {
+      text-decoration: none;
+      background: green;
+    }
+  }
+}

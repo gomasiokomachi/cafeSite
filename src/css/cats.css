@@ -1,0 +1,8 @@
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.panel {
+  width: calc(100% / 3);
+}

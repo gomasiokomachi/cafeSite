@@ -1,0 +1,33 @@
+.concept {
+  text-align: center;
+}
+.conceptTitle {
+  font-size: 50px;
+}
+.conceptText {
+  font-size: 30px;
+}
+
+.pickup {
+  display: flex;
+  justify-content: space-between;
+}
+.pickupItem {
+  position: relative;
+}
+.pickupTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#access {
+  display: flex;
+  flex-flow: row-reverse;
+}
+.accessTitle {
+  display: none;
+}

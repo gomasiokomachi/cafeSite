@@ -1,0 +1,307 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*--------------------仮--------------------*/
+.logo {
+  width: 200px;
+  height: 100px;
+  background: black;
+}
+/*--------------------仮--------------------*/
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.schedule {
+  list-style: none;
+  margin-left: auto;
+}
+
+.gnav {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+.gnavItem {
+  text-align: center;
+  width: calc(100% / 5);
+  border-left: 1px black dotted
+}
+.gnavItem:first-child {
+    border-left: none;
+  }
+.gnavItem a {
+    display: block;
+    padding: 1em 0
+  }
+.gnavItem a:link {
+      text-decoration: none;
+      color: black;
+    }
+.gnavItem a:visited {
+      text-decoration: none;
+      color: black;
+    }
+.gnavItem a:hover {
+      text-decoration: none;
+      background: green;
+    }
+.footer {
+  background: green;
+}
+
+.footerGnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  text-align: center;
+}
+.concept {
+  text-align: center;
+}
+.conceptTitle {
+  font-size: 50px;
+}
+.conceptText {
+  font-size: 30px;
+}
+
+.pickup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pickupItem {
+  position: relative;
+}
+.pickupTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+.accessTitle {
+  display: none;
+}
+.aboutText {
+  text-align: center;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.feature:nth-of-type(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+
+.feature .row {
+    width: 50%;
+  }
+.featureTitle {
+  margin-left: calc(30% / 2);
+}
+.featureText {
+  width: 70%;
+  margin: 0 auto;
+}
+.featureImg {
+  width: 50%
+}
+.featureImg div {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+#system .systemTitle {
+    text-align: center;
+  }
+
+#system table {
+    margin: 0 auto;
+  }
+
+#system th {
+    border: 3px black solid;
+    background: gray;
+  }
+
+#system td {
+    border: 3px black solid;
+  }
+.panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.panel {
+  width: calc(100% / 3);
+}
+.menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menuItem {
+  width: 50%
+}
+.menuItem table {
+    margin: 0 auto;
+  }
+.menuTitle {
+  text-align: center;
+  background: green;
+  padding: 1em 0;
+}
+.menuImg div {
+    margin: 0 auto;
+  }
+.contents >*:not(.header) {
+  max-width: 1200px;
+  margin: 0 auto;
+}

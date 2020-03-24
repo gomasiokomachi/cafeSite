@@ -1,0 +1,43 @@
+.aboutText {
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  &:nth-of-type(2) {
+    flex-flow: row-reverse;
+  }
+  & .row {
+    width: 50%;
+  }
+}
+.featureTitle {
+  margin-left: calc(30% / 2);
+}
+.featureText {
+  width: 70%;
+  margin: 0 auto;
+}
+.featureImg {
+  width: 50%;
+  & div {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+#system {
+  & .systemTitle {
+    text-align: center;
+  }
+  & table {
+    margin: 0 auto;
+  }
+  & th {
+    border: 3px black solid;
+    background: gray;
+  }
+  & td {
+    border: 3px black solid;
+  }
+}
