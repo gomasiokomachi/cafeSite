@@ -1,11 +1,27 @@
+#hero {
+  & img {
+    width: 100%;
+    height: 675px;
+    object-fit: cover;
+  }
+}
+
+.swiper-container {
+  & img {
+    width: 100%;
+  }
+}
+
 .concept {
+  width: 50%;
   text-align: center;
 }
 .conceptTitle {
-  font-size: 50px;
+  font-size: 30px;
 }
 .conceptText {
-  font-size: 30px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .pickup {
@@ -14,6 +30,18 @@
 }
 .pickupItem {
   position: relative;
+  overflow: hidden;
+  max-width: 320px;
+  border-radius: 20px;
+  & a {
+    display: block;
+    transition-duration: .5s;
+    width: 100%;
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: .5s;
+    }
+  }
 }
 .pickupTitle {
   position: absolute;
@@ -22,6 +50,14 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.pickupImg {
+  & img {
+    width: 100%;
+  }
 }
 
 #access {
@@ -30,4 +66,19 @@
 }
 .accessTitle {
   display: none;
+}
+.accessList {
+  width: 30%;
+  margin: 20px 10%;
+}
+.accessListTitle {
+  font-size: 30px;
+}
+.accessItem {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.map {
+  width: 50%;
+  height: auto;
 }
