@@ -1,5 +1,11 @@
+.aboutHeader {
+  background-image: url(/img/aboutHero.jpg);
+}
+
 .aboutText {
   text-align: center;
+  width: 50%;
+  margin-top: 50px !important;
 }
 
 .feature {
@@ -13,14 +19,20 @@
 }
 .featureTitle {
   margin-left: calc(30% / 2);
+  font-size: 30px;
+  & small {
+    margin-left: 10px;
+    font-size: 16px;
+  }
 }
 .featureText {
   width: 70%;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 .featureImg {
   width: 50%;
-  & div {
+  & img {
+    display: block;
     width: 70%;
     margin: 0 auto;
   }

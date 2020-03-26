@@ -1,8 +1,23 @@
+.catsHeader {
+  background-image: url(/img/catsHero.jpg);
+}
+
 .panels {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .panel {
-  width: calc(100% / 3);
+  max-width: calc(75% / 3);
+  margin-left: calc(25% / 2);
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  & img {
+    width: 100%;
+  }
+  & figcaption {
+    text-align: center;
+    padding: 1em 0 2em;
+    font-size: 20px;
+  }
 }

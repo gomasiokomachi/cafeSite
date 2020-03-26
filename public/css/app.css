@@ -176,6 +176,9 @@ input, select {
        object-fit: cover;
   }
 
+.swiper {
+  margin-top: 20px !important;
+}
 .swiper-container img {
     width: 100%;
   }
@@ -260,8 +263,14 @@ input, select {
   width: 50%;
   height: auto;
 }
+.aboutHeader {
+  background-image: url(/img/aboutHero.jpg);
+}
+
 .aboutText {
   text-align: center;
+  width: 50%;
+  margin-top: 50px !important;
 }
 
 .feature {
@@ -282,15 +291,21 @@ input, select {
   }
 .featureTitle {
   margin-left: calc(30% / 2);
+  font-size: 30px
 }
+.featureTitle small {
+    margin-left: 10px;
+    font-size: 16px;
+  }
 .featureText {
   width: 70%;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 .featureImg {
   width: 50%
 }
-.featureImg div {
+.featureImg img {
+    display: block;
     width: 70%;
     margin: 0 auto;
   }
@@ -311,19 +326,36 @@ input, select {
 #system td {
     border: 3px black solid;
   }
+.catsHeader {
+  background-image: url(/img/catsHero.jpg);
+}
+
 .panels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .panel {
-  width: calc(100% / 3);
+  max-width: calc(75% / 3);
+  margin-left: calc(25% / 2)
 }
+.panel:nth-child(3n+1) {
+    margin-left: 0;
+  }
+.panel img {
+    width: 100%;
+  }
+.panel figcaption {
+    text-align: center;
+    padding: 1em 0 2em;
+    font-size: 20px;
+  }
+.menuHeader {
+  background-image: url(/img/menuHero.jpg);
+}
+
 .menuList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,22 +366,53 @@ input, select {
 .menuItem {
   width: 50%
 }
+.menuItem:nth-child(n+3) {
+    margin-top: 100px;
+  }
 .menuItem table {
-    margin: 0 auto;
+    width: 70%;
+    margin: 10px auto 0;
+  }
+.menuItem td {
+    padding-top: 10px;
+    text-align: center;
   }
 .menuTitle {
   text-align: center;
   background: green;
   padding: 1em 0;
 }
-.menuImg div {
-    margin: 0 auto;
+.menuImg {
+  width: 70%;
+  margin: 0 auto
+}
+.menuImg img {
+    display: block;
+    width: 100%;
   }
 .contents >*:not(.header) {
   max-width: 1200px;
   padding: 0 30px;
   margin: 100px auto 0;
 }
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 3px black
+}
+.hero small {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
 /**
  * Swiper 5.3.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions

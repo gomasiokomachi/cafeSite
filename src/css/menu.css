@@ -1,11 +1,23 @@
+.menuHeader {
+  background-image: url(/img/menuHero.jpg);
+}
+
 .menuList {
   display: flex;
   flex-wrap: wrap;
 }
 .menuItem {
   width: 50%;
+  &:nth-child(n+3) {
+    margin-top: 100px;
+  }
   & table {
-    margin: 0 auto;
+    width: 70%;
+    margin: 10px auto 0;
+  }
+  & td {
+    padding-top: 10px;
+    text-align: center;
   }
 }
 .menuTitle {
@@ -14,7 +26,10 @@
   padding: 1em 0;
 }
 .menuImg {
-  & div {
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
+  & img {
+    display: block;
+    width: 100%;
   }
 }

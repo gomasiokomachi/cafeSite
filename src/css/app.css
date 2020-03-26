@@ -6,8 +6,34 @@
 @import "cats.css";
 @import "menu.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Futura', 'monospace';
+}
+
 .contents >*:not(.header) {
   max-width: 1200px;
   padding: 0 30px;
   margin: 100px auto 0;
+}
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  & small {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
