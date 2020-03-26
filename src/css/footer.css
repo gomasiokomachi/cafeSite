@@ -1,15 +1,48 @@
 .footer {
-  background: green;
+  background: #0B3861;
+  padding: 50px 30px 20px;
+  margin-top: 200px;
+  border-top: 10px #F7D358 solid;
 }
 
 .footerGnav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   max-width: 1200px;
   margin: 0 auto;
 }
+.footerGnavItem {
+  &::before {
+    content: '- ';
+    color: white;
+  }
+  & a {
+    &:link {
+      text-decoration: none;
+      color: white;
+    }
+    &:visited {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 300px;
+  margin: 20px auto 0;
+  color: white;
+}
 
 .copyright {
   text-align: center;
+  margin-top: 20px;
+  font-family: 'Helvetica';
+  font-weight: 100;
+  color: white;
 }

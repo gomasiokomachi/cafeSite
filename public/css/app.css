@@ -150,13 +150,18 @@ input, select {
       background: green;
     }
 .footer {
-  background: green;
+  background: #0B3861;
+  padding: 50px 30px 20px;
+  margin-top: 200px;
+  border-top: 10px #F7D358 solid;
 }
 
 .footerGnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -164,9 +169,38 @@ input, select {
   max-width: 1200px;
   margin: 0 auto;
 }
+.footerGnavItem::before {
+    content: '- ';
+    color: white;
+  }
+.footerGnavItem a:link {
+      text-decoration: none;
+      color: white;
+    }
+.footerGnavItem a:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  max-width: 300px;
+  margin: 20px auto 0;
+  color: white;
+}
 
 .copyright {
   text-align: center;
+  margin-top: 20px;
+  font-family: 'Helvetica';
+  font-weight: 100;
+  color: white;
 }
 
   #hero img {
@@ -243,22 +277,29 @@ input, select {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-flow: row-reverse;
-          flex-flow: row-reverse;
+          flex-flow: row-reverse
 }
+
+#access .row {
+    width: 40%;
+    margin: 20px 5%;
+  }
 .accessTitle {
-  display: none;
-}
-.accessList {
-  width: 30%;
-  margin: 20px 10%;
-}
-.accessListTitle {
-  font-size: 30px;
-}
-.accessItem {
-  margin-top: 20px;
   font-size: 20px;
 }
+.accessList dt {
+    display: block;
+    float: left;
+    clear: left;
+    width: 20%;
+    margin-top: 20px;
+  }
+.accessList dd {
+    display: block;
+    float: left;
+    margin-top: 20px;
+  }
+
 .map {
   width: 50%;
   height: auto;
@@ -390,6 +431,14 @@ input, select {
     display: block;
     width: 100%;
   }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Futura', 'monospace';
+}
+
 .contents >*:not(.header) {
   max-width: 1200px;
   padding: 0 30px;
