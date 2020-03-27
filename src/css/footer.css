@@ -1,8 +1,9 @@
 .footer {
-  background: #0B3861;
+  background: linear-gradient(0deg, rgb(10, 27, 42) 20%, rgba(11, 56, 97, .8) 100%), url(/img/footerBg.gif);
+  background-repeat: repeat;
   padding: 50px 30px 20px;
   margin-top: 200px;
-  border-top: 10px #F7D358 solid;
+  border-top: 20px #0B3861 solid;
 }
 
 .footerGnav {
@@ -14,11 +15,16 @@
   margin: 0 auto;
 }
 .footerGnavItem {
-  &::before {
-    content: '- ';
-    color: white;
+  transition: .5s;
+  &:hover {
+    transform: rotateX(360deg);
+    transition: .5s;
   }
   & a {
+    &::before {
+      content: '◆';
+      margin-right: 1ex;
+    }
     &:link {
       text-decoration: none;
       color: white;
@@ -27,6 +33,9 @@
       text-decoration: none;
       color: white;
     }
+    &:hover {
+      color: #F7D358;
+    }
   }
 }
 
@@ -34,14 +43,14 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  max-width: 300px;
-  margin: 20px auto 0;
+  max-width: 200px;
+  margin: 50px auto 0;
   color: white;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   font-family: 'Helvetica';
   font-weight: 100;
   color: white;
