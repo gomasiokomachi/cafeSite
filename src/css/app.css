@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  font-family: 'Futura', 'monospace';
+  background: #f2f2f2;
+  font-family: 'Futura', 'Hiragino Maru Gothic Pro';
 }
 
 .contents >*:not(.header) {

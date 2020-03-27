@@ -16,15 +16,17 @@
 }
 
 .concept {
-  width: 50%;
   text-align: center;
 }
 .conceptTitle {
   font-size: 30px;
+  font-weight: lighter;
+  color: #0B3861;
 }
 .conceptText {
-  margin-top: 20px;
-  font-size: 20px;
+  max-width: 600px;
+  margin: 50px auto 0;
+  line-height: 50px;
 }
 
 .pickup {
@@ -35,7 +37,11 @@
   position: relative;
   overflow: hidden;
   max-width: 320px;
+  margin-left: 30px;
   border-radius: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
   & a {
     display: block;
     transition-duration: .5s;
@@ -72,7 +78,12 @@
   }
 }
 .accessTitle {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #0B3861;
+  & small {
+    font-size: 20px;
+  }
 }
 .accessList {
   & dt {
@@ -86,6 +97,13 @@
     display: block;
     float: left;
     margin-top: 20px;
+  }
+}
+.accessImg {
+  clear: both;
+  margin-top: 200px;
+  & img {
+    width: 100%;
   }
 }
 
