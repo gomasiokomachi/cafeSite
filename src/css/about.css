@@ -4,8 +4,9 @@
 
 .aboutText {
   text-align: center;
-  width: 50%;
-  margin-top: 50px !important;
+  max-width: 600px !important;
+  margin: 50px auto 0 !important;
+  line-height: 32px;
 }
 
 .feature {
@@ -18,8 +19,10 @@
   }
 }
 .featureTitle {
-  margin-left: calc(30% / 2);
+  padding-bottom: 20px;
+  margin: 0 calc(30% / 2);
   font-size: 30px;
+  border-bottom: 5px black dotted;
   & small {
     margin-left: 10px;
     font-size: 16px;
@@ -28,6 +31,8 @@
 .featureText {
   width: 70%;
   margin: 20px auto 0;
+  text-align: justify;
+  line-height: 32px;
 }
 .featureImg {
   width: 50%;
@@ -41,15 +46,26 @@
 #system {
   & .systemTitle {
     text-align: center;
+    font-size: 50px;
   }
   & table {
-    margin: 0 auto;
+    margin: 50px auto 0;
+    text-align: center;
+    overflow: hidden;
+    border-collapse: separate;
+    border-radius: 20px;
+    border: 3px #f7d358 solid;
+    background: white;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3));
   }
   & th {
-    border: 3px black solid;
-    background: gray;
+    padding: 20px 30px;
+    background: #f7d358;
   }
   & td {
-    border: 3px black solid;
+    padding: 20px 30px;
+    border-top: 3px #f7d358 solid;
+    border-left: 3px #f7d358 solid;
   }
 }
