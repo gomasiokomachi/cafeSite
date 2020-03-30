@@ -12,9 +12,10 @@
   justify-content: space-between;
   list-style: none;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: -20px auto 0;
 }
 .footerGnavItem {
+  margin: 20px 1ex 0 0;
   &:hover span {
     display: inline-block;
     transform: rotateX(360deg);

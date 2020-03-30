@@ -1,0 +1,186 @@
+@media screen and (max-width: 800px) {
+
+/*トップページ(index.html)*/
+  .pickup {
+    display: block;
+  }
+  .pickupItem {
+    margin: 20px auto 0;
+    &:first-of-type {
+      margin: 0 auto;
+    }
+  }
+  #access {
+    display: block;
+    text-align: center;
+    & .row {
+      width: 90%;
+      margin: 20px 5% 0;
+    }
+  }
+  .accessTitle {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .accessList {
+    text-align: left;
+    max-width: 480px;
+    margin: 0 auto;
+    & dt {
+      width: 50%;
+    }
+  }
+  .map {
+    width: 90%;
+    max-width: 480px;
+    margin: 20px 5% 0;
+    height: 300px;
+  }
+
+/*Mu.について(about.html)*/
+  .feature {
+    display: block;
+    & .row {
+      width: 100%;
+    }
+  }
+  .featureTitle, .featureText {
+    width: 100%;
+    max-width: 420px;
+  }
+  .featureImg {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto 0;
+    & img {
+      width: 100%;
+    }
+  }
+  #system {
+    & th {
+      padding: 1em;
+    }
+    & td {
+      padding: 1em;
+    }
+  }
+
+/*猫の紹介(cats.html)*/
+  .panel {
+    max-width: calc(75% / 2);
+    margin-left: 25% !important;
+    &:nth-of-type(n+3) {
+      margin-top: 50px;
+    }
+    &:nth-of-type(2n+1) {
+      margin-left: 0 !important;
+    }
+  }
+
+/*カフェメニュー(menu.html)*/
+  .menuItem {
+    width: 100%;
+    &:nth-of-type(n+2) {
+      margin-top: 100px;
+    }
+    & table {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  .menuTitle, .menuImg {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+/*Mu.について(about.html)*/
+  #system {
+    & table {
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+/*ヘッダー*/
+  .schedule {
+    display: none;
+  }
+  #openLabel, #closeLabel {
+    display: block;
+    cursor : pointer;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3));
+  }
+  #openLabel {
+    background: white;
+    color: #0B3861;
+    right: 20px;
+    z-index: 900;
+  }
+  #closeLabel {
+    background: white;
+    color: #0B3861;
+    right: -364px;
+  }
+  #menuButton:checked {
+    & ~ #closeLabel {
+      transition: .5s;
+      right: 20px;
+      z-index: 1100;
+    }
+    & ~ .gnav {
+      transition: .5s;
+      right: 0;
+    }
+  }
+  .gnav {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    padding: 50px 0 0;
+    margin-top: 0;
+    font-size: 30px;
+    background: #0B3861;
+    transition: .5s;
+    position: fixed;
+    top: 0;
+    right: -384px;
+    z-index: 1000;
+    &:hover .gnavItem a {
+      filter: none;
+    }
+  }
+  .gnavItem {
+    text-align: left;
+    width: auto;
+    margin: 20px 0 0 30px;
+    border-left: none;
+  }
+/*Mu.について(about.html)*/
+  #system {
+    & th {
+      padding: 1ex;
+    }
+    & td {
+      padding: 1ex;
+    }
+  }
+/*猫の紹介(cats.html)*/
+  .panel {
+    & figcaption {
+      font-size: 16px;
+    }
+  }
+
+}

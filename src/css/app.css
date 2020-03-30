@@ -1,10 +1,4 @@
 @import "reset.css";
-@import "header.css";
-@import "footer.css";
-@import "index.css";
-@import "about.css";
-@import "cats.css";
-@import "menu.css";
 
 html {
   scroll-behavior: smooth;
@@ -38,3 +32,11 @@ body {
     font-size: 16px;
   }
 }
+
+@import "header.css";
+@import "footer.css";
+@import "index.css";
+@import "about.css";
+@import "cats.css";
+@import "menu.css";
+@import "responsive.css";

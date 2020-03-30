@@ -147,7 +147,6 @@ input, select {
 }
 
 .gnav {
-  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +189,10 @@ input, select {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
     }
+
+#openLabel, #closeLabel, #menuButton {
+    display: none;
+}
 .footer {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgb(10, 27, 42)), to(rgba(11, 56, 97, .8))), url(/img/footerBg.gif);
   background: linear-gradient(0deg, rgb(10, 27, 42) 20%, rgba(11, 56, 97, .8) 100%), url(/img/footerBg.gif);
@@ -210,7 +213,10 @@ input, select {
           justify-content: space-between;
   list-style: none;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: -20px auto 0;
+}
+.footerGnavItem {
+  margin: 20px 1ex 0 0
 }
 .footerGnavItem:hover span {
     display: inline-block;
@@ -326,6 +332,7 @@ input, select {
   text-shadow: 1px 1px 3px black;
 }
 .pickupImg img {
+    display: block;
     width: 100%;
   }
 
@@ -341,7 +348,7 @@ input, select {
 
 #access .row {
     width: 40%;
-    margin: 20px 5%;
+    margin: 20px 5% 0;
   }
 .accessTitle {
   font-size: 30px;
@@ -355,8 +362,10 @@ input, select {
     display: block;
     float: left;
     clear: left;
-    width: 20%;
+    width: 40%;
     margin-top: 20px;
+    font-weight: bolder;
+    color: #0B3861;
   }
 .accessList dd {
     display: block;
@@ -365,14 +374,16 @@ input, select {
   }
 .accessImg {
   clear: both;
-  margin-top: 200px
+  display: inline-block;
+  max-width: 480px;
+  margin-top: 20px
 }
 .accessImg img {
+    display: block;
     width: 100%;
   }
 
 .map {
-  width: 50%;
   height: auto;
 }
 .aboutHeader {
@@ -403,8 +414,9 @@ input, select {
     width: 50%;
   }
 .featureTitle {
+  width: 70%;
   padding-bottom: 20px;
-  margin: 0 calc(30% / 2);
+  margin: 0 auto;
   font-size: 30px;
   border-bottom: 5px black dotted
 }
@@ -446,12 +458,12 @@ input, select {
   }
 
 #system th {
-    padding: 20px 30px;
+    padding: 1em 2em;
     background: #f7d358;
   }
 
 #system td {
-    padding: 20px 30px;
+    padding: 1em 2em;
     border-top: 3px #f7d358 solid;
     border-left: 3px #f7d358 solid;
   }
@@ -468,14 +480,14 @@ input, select {
 }
 .panel {
   max-width: calc(75% / 3);
-  margin: 20px 0 0 calc(25% / 2);
+  margin-left: calc(25% / 2);
   border-radius: 10px;
   overflow: hidden;
   -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3));
           filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3))
 }
-.panel:nth-child(-n+3) {
-    margin-top: 0;
+.panel:nth-child(n+4) {
+    margin-top: 50px;
   }
 .panel:nth-child(3n+1) {
     margin-left: 0;
@@ -505,7 +517,7 @@ input, select {
 .menuItem {
   width: 50%
 }
-.menuItem:nth-child(n+3) {
+.menuItem:nth-of-type(n+3) {
     margin-top: 100px;
   }
 .menuItem table {
@@ -513,11 +525,12 @@ input, select {
     margin: 20px auto 0;
   }
 .menuItem td {
-    width: 50%;
+    width: 70%;
     padding-top: 20px;
     text-align: left
   }
-.menuItem td:nth-child(2) {
+.menuItem td:nth-of-type(2) {
+      width: 30%;
       text-align: right;
     }
 .menuTitle {
@@ -549,6 +562,187 @@ input, select {
     display: block;
     width: 100%;
   }
+@media screen and (max-width: 800px) {
+
+/*トップページ(index.html)*/
+  .pickup {
+    display: block;
+  }
+  .pickupItem {
+    margin: 20px auto 0
+  }
+    .pickupItem:first-of-type {
+      margin: 0 auto;
+    }
+  #access {
+    display: block;
+    text-align: center
+  }
+    #access .row {
+      width: 90%;
+      margin: 20px 5% 0;
+    }
+  .accessTitle {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .accessList {
+    text-align: left;
+    max-width: 480px;
+    margin: 0 auto
+  }
+    .accessList dt {
+      width: 50%;
+    }
+  .map {
+    width: 90%;
+    max-width: 480px;
+    margin: 20px 5% 0;
+    height: 300px;
+  }
+
+/*Mu.について(about.html)*/
+  .feature {
+    display: block
+  }
+    .feature .row {
+      width: 100%;
+    }
+  .featureTitle, .featureText {
+    width: 100%;
+    max-width: 420px;
+  }
+  .featureImg {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto 0
+  }
+    .featureImg img {
+      width: 100%;
+    }
+    #system th {
+      padding: 1em;
+    }
+    #system td {
+      padding: 1em;
+    }
+
+/*猫の紹介(cats.html)*/
+  .panel {
+    max-width: calc(75% / 2);
+    margin-left: 25% !important
+  }
+    .panel:nth-of-type(n+3) {
+      margin-top: 50px;
+    }
+    .panel:nth-of-type(2n+1) {
+      margin-left: 0 !important;
+    }
+
+/*カフェメニュー(menu.html)*/
+  .menuItem {
+    width: 100%
+  }
+    .menuItem:nth-of-type(n+2) {
+      margin-top: 100px;
+    }
+    .menuItem table {
+      width: 100%;
+      max-width: 420px;
+    }
+  .menuTitle, .menuImg {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+/*Mu.について(about.html)*/
+    #system table {
+      font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+/*ヘッダー*/
+  .schedule {
+    display: none;
+  }
+  #openLabel, #closeLabel {
+    display: block;
+    cursor : pointer;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3));
+            filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, .3));
+  }
+  #openLabel {
+    background: white;
+    color: #0B3861;
+    right: 20px;
+    z-index: 900;
+  }
+  #closeLabel {
+    background: white;
+    color: #0B3861;
+    right: -364px;
+  }
+    #menuButton:checked ~ #closeLabel {
+      -webkit-transition: .5s;
+      transition: .5s;
+      right: 20px;
+      z-index: 1100;
+    }
+    #menuButton:checked ~ .gnav {
+      -webkit-transition: .5s;
+      transition: .5s;
+      right: 0;
+    }
+  .gnav {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    padding: 50px 0 0;
+    margin-top: 0;
+    font-size: 30px;
+    background: #0B3861;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: fixed;
+    top: 0;
+    right: -384px;
+    z-index: 1000
+  }
+    .gnav:hover .gnavItem a {
+      -webkit-filter: none;
+              filter: none;
+    }
+  .gnavItem {
+    text-align: left;
+    width: auto;
+    margin: 20px 0 0 30px;
+    border-left: none;
+  }
+/*Mu.について(about.html)*/
+    #system th {
+      padding: 1ex;
+    }
+    #system td {
+      padding: 1ex;
+    }
+/*猫の紹介(cats.html)*/
+    .panel figcaption {
+      font-size: 16px;
+    }
+
+}
 html {
   scroll-behavior: smooth;
 }
